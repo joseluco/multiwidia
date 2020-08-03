@@ -1,0 +1,73 @@
+@import "webdev.css";
+@import "whatsapp.css";
+
+@media only screen and (max-width: 650) {
+    .part-middle h1 {
+     display: none !important;
+  }
+}
+
+
+
+.part-top, .part-middle, .part-bottom {
+    position: relative;
+    opacity: 0.85;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+.part-top {
+    background-color: black;
+    min-height: 100%;
+  }
+  
+.part-middle {
+    background-image: url("../img/background/torneria.jpg");
+    min-height: 800px;
+  }
+  
+.part-bottom {
+    background-image: url("../img/background/cuchillas.jpg");
+    min-height: 400px;
+  }
+
+.part-middle img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 20px;
+      left: 40px;
+  }
+
+.part-middle .h1 {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 250px;
+}
+
+.informacion-util {
+    width: 50%;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    background-color: black;
+}
+
+/*Quienes Somos*/
+.historia {
+    padding: 5px 40px;
+}
+
+/*Productos*/
+
+
+/*Footer*/
+  iframe {
+      max-width: 100%;
+      height: auto;
+  }
