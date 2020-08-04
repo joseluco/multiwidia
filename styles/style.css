@@ -51,10 +51,11 @@
 }
 
 .informacion-util {
+    align-items: center;
     width: 50%;
     position: absolute;
-    bottom: 30%;
-    left: 30%;
+    bottom: 50%;
+    left: 400px;
     background-color: black;
 }
 
