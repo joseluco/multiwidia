@@ -1,22 +1,47 @@
 @import "webdev.css";
 @import "whatsapp.css";
 
-@media only screen and (max-width: 650) {
-    .part-middle h1 {
-     display: none !important;
+@media only screen and (min-width: 850px) {
+  .servicios2 {
+    display: none;
   }
-}
+  .servicios1 {
+    display: block;
+  }
+ }
+@media only screen and (max-width: 850px) {
+  .h1 {
+     display: none;
+  }
+  .servicios2 {
+    display: block;
+  }
+  .servicios1 {
+    display: none;
+  }
+  .productos p {
+    font-size: 15px;
+  }
+ }
 
+ body{
+  background-color: rgba(208, 218, 228, 0.877);
+  color: rgb(80, 80, 80);
+ }
 
+ a {
+  color: rgb(80, 80, 80);
+ }
+ a:hover {
+  color: rgb(34, 30, 30);
+ }
 
 .part-top, .part-middle, .part-bottom {
     position: relative;
-    opacity: 0.85;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
   }
 
 .part-top {
@@ -26,12 +51,13 @@
   
 .part-middle {
     background-image: url("../img/background/torneria.jpg");
-    min-height: 800px;
+    min-height: 600px;
+    background-color: rgba(31, 31, 31, 0.479);
   }
   
 .part-bottom {
     background-image: url("../img/background/cuchillas.jpg");
-    min-height: 400px;
+    min-height: 300px;
   }
 
 .part-middle img {
@@ -43,28 +69,49 @@
   }
 
 .part-middle .h1 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 250px;
+    color: rgba(194, 194, 194, 0.877);
+    text-shadow: 4px 2px 5px black;
 }
 
-.informacion-util {
-    width: 50%;
-    position: absolute;
-    bottom: 30%;
-    left: 30%;
-    background-color: black;
+.part-middle .servicios1 {
+  position: absolute;
+  left: 250px;
+  bottom: 30px;
+  color: rgba(194, 194, 194, 0.877);
+  text-shadow: 5px 2px 5px rgb(56, 56, 56);
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 500px;
+  
+}
+
+.serv1txt {
+  padding: 5px 10px;
+  background-color: rgba(31, 31, 31, 0.479);
 }
 
 /*Quienes Somos*/
-.historia {
-    padding: 5px 40px;
+.historia .servicios2 {
+    padding: 10px 40px;
 }
 
 /*Productos*/
+.productos .product {
+  font-size: 25px;
+  font-weight: bold;
+  color:rgb(59, 58, 58);
+  text-shadow: 4px 2px 5px white;
+}
 
+h2 {
+  color: rgb(80, 80, 80);
+  text-shadow: 4px 2px 5px white;
+}
 
 /*Footer*/
   iframe {
