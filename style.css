@@ -1,0 +1,128 @@
+@import "webdev.css";
+@import "whatsapp.css";
+
+@media only screen and (min-width: 850px) {
+  .servicios2 {
+    display: none;
+  }
+  .servicios1 {
+    display: block;
+  }
+ }
+@media only screen and (max-width: 850px) {
+  .h1, .servicios1 {
+     display: none;
+  }
+  .h2 {
+    text-align: center;
+  }
+  .servicios2 {
+    display: block;
+  }
+  .productos p {
+    font-size: 15px;
+  }
+  .contact {
+    margin: 0 25%;
+  }
+ }
+
+ body{
+  background-color: rgba(208, 218, 228, 0.877);
+  color: rgb(80, 80, 80);
+ }
+
+ a {
+  color: rgb(80, 80, 80);
+ }
+
+ a:hover {
+  color: rgb(34, 30, 30);
+ }
+
+.part-top, .part-middle, .part-bottom {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.part-top {
+    background-color: black;
+    min-height: 100%;
+  }
+  
+.part-middle {
+    background-image: url("../img/background/torneria.jpg"); 
+    min-height: 600px;
+    background-color: rgba(31, 31, 31, 0.479);
+  }
+  
+.part-bottom {
+    background-image: linear-gradient(rgba(207, 207, 207, 0.582),rgba(150, 150, 150, 0.603)), url("../img/background/cuchillas.jpg");
+    min-height: 300px;
+  }
+
+.part-middle img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 20px;
+      left: 40px;
+  }
+
+.part-middle .h1 {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 65px;
+    left: 250px;
+    color: rgba(194, 194, 194, 0.877);
+    text-shadow: 4px 2px 5px black;
+}
+
+.part-middle .servicios1 {
+  position: absolute;
+  left: 250px;
+  bottom: 30px;
+  color: rgba(194, 194, 194, 0.877);
+  text-shadow: 5px 2px 5px rgb(56, 56, 56);
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 500px;
+  
+}
+
+.serv1txt {
+  padding: 5px 10px;
+  background-color: rgba(31, 31, 31, 0.479);
+}
+
+/*Quienes Somos*/
+.historia .servicios2 {
+    padding: 10px 40px;
+}
+
+/*Productos*/
+.productos .product {
+  font-size: 25px;
+  font-weight: bold;
+  color:rgb(59, 58, 58);
+  text-shadow: 4px 2px 5px white;
+}
+
+h2 {
+  color: rgb(80, 80, 80);
+  text-shadow: 4px 2px 5px white;
+}
+
+/*Footer*/
+iframe {
+      max-width: 100%;
+      height: auto;
+  }
+
+.fa-envelope, .fa-whatsapp {
+  font-weight: bold;
+}
